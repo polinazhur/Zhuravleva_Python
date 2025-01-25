@@ -5,14 +5,14 @@ A = input("Введите целое число A: ")
 while type(A) != int:
     try:
         A = int(A)
-    except:
+    except ValueError:
         A = input("Введите целое число A: ")
 
 B = input("Введите целое число B: ")
 while type(B) != int:
     try:
         B = int(B)
-    except:
+    except ValueError:
         B = input("Введите целое число B: ")
 
 sum_squares = 0 # для хранения суммы
