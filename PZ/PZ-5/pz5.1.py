@@ -10,6 +10,6 @@ A = input("Введите количество строк: ")
 while type(A) != int:
     try:
         A = int(A)
-    except ValueError:
+    except:
         A = input("Введите количество строк: ")
 print_stars(A)
