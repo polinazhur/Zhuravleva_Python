@@ -13,7 +13,7 @@ K = input("Введите целое число K: ")
 while type(K) != int:
     try:
         K = int(K)
-    except ValueError:
+    except:
         K = input("Введите целое число K: ")
 
 D1 = input("Введите первую цифру D1 (1-9): ")
@@ -24,7 +24,7 @@ while type(D1) != int:
             break
         else:
             D1 = input("Введите первую цифру D1 (1-9): ")
-    except ValueError:
+    except:
         D1 = input("Введите первую цифру D1 (1-9): ")
 
 D2 = input("Введите вторую цифру D2 (1-9): ")
@@ -35,7 +35,7 @@ while type(D2) != int:
             break
         else:
             D2 = input("Введите вторую цифру D2 (1-9): ")
-    except ValueError:
+    except:
         D2 = input("Введите вторую цифру D2 (1-9): ")
 
 K = AddLeftDigit(D1, K)
