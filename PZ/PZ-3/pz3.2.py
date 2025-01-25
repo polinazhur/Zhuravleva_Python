@@ -7,14 +7,14 @@ unit_number = input("Введите число измерения: ")
 while type(unit_number) != int:
     try:
         unit_number = int(unit_number)
-    except:
+    except ValueError:
         unit_number = input("Введите число измерения: ")
 
 length = input("Введите длинну: ")
 while type(length) != int:
     try:
         length = int(length)
-    except:
+    except ValueError:
         length = input("Введите длинну: ")
 
 if unit_number == 1:
