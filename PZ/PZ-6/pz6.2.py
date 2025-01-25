@@ -6,7 +6,7 @@ n = input("Введите длинну случайного списка: ")
 while type(n) != int:
     try:
         n = int(n)
-    except ValueError:
+    except:
         n = input("Введите длинну случайного списка: ")
 
 lst = [int(random.randint(1, 100)) for i in range(n)]
