@@ -8,7 +8,7 @@ P = input("Введите целое число P: ")
 while type(P) != float:
     try:
         P = float(P)
-    except:
+    except ValueError:
         P = input("Введите целое число P: ")
 
 S = 1000.0
